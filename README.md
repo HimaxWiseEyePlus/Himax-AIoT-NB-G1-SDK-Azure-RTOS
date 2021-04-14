@@ -6,9 +6,7 @@ Following examples are included :
   
 ## Table of contents
   - [Prerequisites](#prerequisites)
-  - [Deploy to Himax-AIoT-NB-G1](#deploy-to-h010_hx6539_nb_iot_wnb303r_v10-evb)    
-  - [Training your own model](#training-your-own-model)
-  - [Convert model from PyTorch to TensorFlow Lite for Microcontrollers](#convert-model-from-pytorch-to-tensorflow-lite-for-microcontrollers)
+  - [Deploy to Himax-AIoT-NB-G1](#deploy-to-h010_hx6539_nb_iot_wnb303r_v10-evb)
    
 ## Prerequisites
 - Make Tool version
@@ -66,14 +64,4 @@ make
 make flash 
 ```
 
-After flash image generated, please download the flash image file to HIMAX WE1 EVB by UART, details are described [here](https://github.com/HimaxWiseEyePlus/Himax-AIoT-NB-G1-SDK-Azure-RTOS-main/Himax-AIoT-NB-G1_user_guide#flash-image-update-at-linux-environment)
-
-## Training your own model
-
-Model used by handwriting example is training with MNIST dataset, please take a look [here](tensorflow/lite/micro/examples/handwriting/training_a_model.md#train-handwriting-model-on-MNIST-dataset) about training flow if you are interested in.
-
-
-## Convert model from PyTorch to TensorFlow Lite for Microcontrollers
-
-Whenever there is a PyTorch model in your hand, [here](tensorflow/lite/micro/examples/handwriting/pytorch_onnx_tflite/README.md#convert-model-from-pytorch-to-tensorflow-lite-for-microcontrollers) is a tutorial to switch it to tflite model and deploy it on HIMAX WE1 EVB.
-
+After flash image generated, please download the flash image file to Himax AIoT Platform by GUI Tool, details are described [here](https://github.com/HimaxWiseEyePlus/Himax-AIoT-NB-G1-SDK-Azure-RTOS-main/Himax-AIoT-NB-G1_user_guide#flash-image-update)
