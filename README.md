@@ -61,7 +61,7 @@ Build person detection INT8 example and flash image, flash image name will be `W
 ```
 make clean
 make
-make flash                                                                                                                                         
+make flash
 ```
 
 After flash image generated, please download the flash image file to Himax AIoT Platform by GUI Tool, details are described [here](https://github.com/HimaxWiseEyePlus/Himax-AIoT-NB-G1-SDK-Azure-RTOS/tree/main/Himax-AIoT-NB-G1_user_guide#flash-image-update)
