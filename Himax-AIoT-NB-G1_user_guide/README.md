@@ -59,7 +59,7 @@ HIMAX WE1 AIOT Platform includes Himax WE-I Plus MCU, image sensor and rich peri
 ### Flash Image Update
   - Use FT4222H Tool: after power on EVB
   - NB-IoT board SW1 pin switch to ON
-  - Debug board SW1 pin 1 switch to ¡§OFF¡¨, pin 2 keep ¡§ON¡¨
+  - Debug board SW1 pin 1 switch to OFF, pin 2 keep ON
     - NB-IoT board
     
     ![alt text](images/Himax_NB-IoT_board_sw.png)
@@ -99,7 +99,7 @@ HIMAX WE1 AIOT Platform includes Himax WE-I Plus MCU, image sensor and rich peri
       - #define REGISTRATION_ID                 "Key-in your REGISTRATION_ID" 
       - #define ID_SCOPE                        "Key-in your ID_SCOPE"
       - #define DEVICE_SYMMETRIC_KEY            "Key-in DEVICE_SYMMETRIC_KEY"
-      more information please reference the file:
+      more information please reference the file
       
       <a href="docs/himax_WEI_Azure_RTOS_Device_getStartedDoc.pdf" target="_blank">Azure user guide PDF</a>
       
