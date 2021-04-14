@@ -70,7 +70,7 @@ HIMAX WE1 AIOT Platform includes Himax WE-I Plus MCU, image sensor and rich peri
     
     - WEI_FW_gnu_arcem9d_wei_r16.img path : Himax-AIoT-NB-G1-SDK-Azure-RTOS\himax_aiot_nb-master\obj_socket_24\gnu_arcem9d_wei_r16
     - Extract GUI Tool from HMX_FT4222H_GUI_v1.14.zip
-    - Use GUI_Tool to download EVB image
+    - Use GUI_Tool to download EVB image with windows
       - Step 1: Open HMX_FT4222H_GUI.exe and change to Flash download page
       - Step 2: Read ID to check HW ready (ID info Show in blue box)
       - Step 3: Select correct image file
