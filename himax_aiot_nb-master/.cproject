@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.1629647564">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.1629647564" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.arc.cdt.toolchain.ARCLinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.arc.cdt.toolchain.ARCCompilerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.arc.cdt.toolchain.ARCAssemblerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration buildProperties="" description="" id="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.1629647564" name="Release" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.1629647564.1201598527" name="/" resourcePath="">
+						<toolChain id="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.2001501033" superClass="com.arc.cdt.toolchain.av2em.exeReleaseToolChain">
+							<targetPlatform id="hcTargetPlatform.1460130534" isAbstract="false" name="Generic platform" superClass="hcTargetPlatform"/>
+							<builder id="makeBuilder.1036511493" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="makeBuilder"/>
+							<tool id="arc.cdt.toolchain.av2em.exeCompilerRelease.1639313918" superClass="arc.cdt.toolchain.av2em.exeCompilerRelease">
+								<inputType id="com.arc.cdt.toolchain.arc.ccac.inputTypeCPP.1513179831" name="MetaWare C++ Input" superClass="com.arc.cdt.toolchain.arc.ccac.inputTypeCPP"/>
+								<inputType id="com.arc.cdt.toolchain.arc.ccac.inputTypeC.528764528" name="MetaWare C Input" superClass="com.arc.cdt.toolchain.arc.ccac.inputTypeC"/>
+								<inputType id="com.arc.cdt.toolchain.arc.inputTypeCL.1585299865" name="MetaWare OpenCL" superClass="com.arc.cdt.toolchain.arc.inputTypeCL"/>
+							</tool>
+							<tool id="com.arc.cdt.toolchain.av2em.asmReleaseExe.579850264" superClass="com.arc.cdt.toolchain.av2em.asmReleaseExe">
+								<inputType id="com.arc.cdt.toolchain.asminput.1095328361" name="Assembler Inputs" superClass="com.arc.cdt.toolchain.asminput"/>
+							</tool>
+							<tool id="com.arc.cdt.toolchain.av2em.exelinkerRelease.550480898" superClass="com.arc.cdt.toolchain.av2em.exelinkerRelease">
+								<inputType id="com.arc.cdt.toolchain.linker.input.1476660352" name="Linker Input" superClass="com.arc.cdt.toolchain.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.arc.cdt.toolchain.arc.archiver.486352717" superClass="com.arc.cdt.toolchain.arc.archiver"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="OS_TX_NBIOT_SVN15147_0413_SDK_Rls.null.1781121613" name="OS_TX_NBIOT_SVN15147_0413_SDK_Rls"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.1834465663;com.arc.cdt.toolchain.av2em.exeReleaseToolChain.1834465663.379741523;arc.cdt.toolchain.av2em.exeCompilerRelease.404740026;com.arc.cdt.toolchain.arc.ccac.inputTypeCPP.1425388179">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arc.cdt.toolchain.ScannerConfigurationDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.866093705;com.arc.cdt.toolchain.av2em.exeReleaseToolChain.866093705.1260475570;arc.cdt.toolchain.av2em.exeCompilerRelease.407793295;com.arc.cdt.toolchain.arc.ccac.inputTypeC.1140136153">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arc.cdt.toolchain.ScannerConfigurationDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.2065661999;com.arc.cdt.toolchain.av2em.exeReleaseToolChain.2065661999.73879411;arc.cdt.toolchain.av2em.exeCompilerRelease.576749651;com.arc.cdt.toolchain.arc.ccac.inputTypeC.1169349321">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arc.cdt.toolchain.ScannerConfigurationDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.2065661999;com.arc.cdt.toolchain.av2em.exeReleaseToolChain.2065661999.73879411;arc.cdt.toolchain.av2em.exeCompilerRelease.576749651;com.arc.cdt.toolchain.arc.ccac.inputTypeCPP.1947243657">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arc.cdt.toolchain.ScannerConfigurationDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.1629647564;com.arc.cdt.toolchain.av2em.exeReleaseToolChain.1629647564.1201598527;arc.cdt.toolchain.av2em.exeCompilerRelease.1639313918;com.arc.cdt.toolchain.arc.ccac.inputTypeC.528764528">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arc.cdt.toolchain.ScannerConfigurationDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.1629647564;com.arc.cdt.toolchain.av2em.exeReleaseToolChain.1629647564.1201598527;arc.cdt.toolchain.av2em.exeCompilerRelease.1639313918;com.arc.cdt.toolchain.arc.ccac.inputTypeCPP.1513179831">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arc.cdt.toolchain.ScannerConfigurationDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.866093705;com.arc.cdt.toolchain.av2em.exeReleaseToolChain.866093705.1260475570;arc.cdt.toolchain.av2em.exeCompilerRelease.407793295;com.arc.cdt.toolchain.arc.inputTypeCL.1624431526">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arc.cdt.toolchain.arc.language.settings.providers.ClangOpenCLBuiltinSpecsDetector"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.1834465663;com.arc.cdt.toolchain.av2em.exeReleaseToolChain.1834465663.379741523;arc.cdt.toolchain.av2em.exeCompilerRelease.404740026;com.arc.cdt.toolchain.arc.inputTypeCL.1366619254">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arc.cdt.toolchain.arc.language.settings.providers.ClangOpenCLBuiltinSpecsDetector"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.866093705;com.arc.cdt.toolchain.av2em.exeReleaseToolChain.866093705.1260475570;arc.cdt.toolchain.av2em.exeCompilerRelease.407793295;com.arc.cdt.toolchain.arc.ccac.inputTypeCPP.983088878">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arc.cdt.toolchain.ScannerConfigurationDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.1629647564;com.arc.cdt.toolchain.av2em.exeReleaseToolChain.1629647564.1201598527;arc.cdt.toolchain.av2em.exeCompilerRelease.1639313918;com.arc.cdt.toolchain.arc.inputTypeCL.1585299865">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arc.cdt.toolchain.arc.language.settings.providers.ClangOpenCLBuiltinSpecsDetector"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.2065661999;com.arc.cdt.toolchain.av2em.exeReleaseToolChain.2065661999.73879411;arc.cdt.toolchain.av2em.exeCompilerRelease.576749651;com.arc.cdt.toolchain.arc.inputTypeCL.57388869">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arc.cdt.toolchain.arc.language.settings.providers.ClangOpenCLBuiltinSpecsDetector"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.866093705;com.arc.cdt.toolchain.av2em.exeReleaseToolChain.866093705.1260475570;arc.cdt.toolchain.av2em.exeCompilerRelease.407793295;com.arc.cdt.toolchain.arc.ccac.inputTypeCPP.1052092650">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arc.cdt.toolchain.ScannerConfigurationDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.866093705;com.arc.cdt.toolchain.av2em.exeReleaseToolChain.866093705.1260475570;arc.cdt.toolchain.av2em.exeCompilerRelease.407793295;com.arc.cdt.toolchain.arc.inputTypeCL.1941956479">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arc.cdt.toolchain.arc.language.settings.providers.ClangOpenCLBuiltinSpecsDetector"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.866093705;com.arc.cdt.toolchain.av2em.exeReleaseToolChain.866093705.1260475570;arc.cdt.toolchain.av2em.exeCompilerRelease.407793295;com.arc.cdt.toolchain.arc.ccac.inputTypeC.182812089">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arc.cdt.toolchain.ScannerConfigurationDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.1834465663;com.arc.cdt.toolchain.av2em.exeReleaseToolChain.1834465663.379741523;arc.cdt.toolchain.av2em.exeCompilerRelease.404740026;com.arc.cdt.toolchain.arc.ccac.inputTypeC.979547438">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arc.cdt.toolchain.ScannerConfigurationDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+</cproject>

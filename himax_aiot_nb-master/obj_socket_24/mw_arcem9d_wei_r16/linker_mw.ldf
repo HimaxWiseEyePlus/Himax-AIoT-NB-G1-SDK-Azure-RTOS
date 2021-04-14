@@ -1,0 +1,176 @@
+#line 1 "library/cv/himax/linker_script/linker_template_mw_tflitemicro_tx_wo_audio.ld"
+#line 1 "<built-in>"
+#line 127 "<built-in>"
+#line 1 "C:/ARC_20191114/MetaWare/arc/inc/arc/xyregs.h"
+#line 87 "C:/ARC_20191114/MetaWare/arc/inc/arc/xyregs.h"
+#pragma core_register(__X0_u0 __NAME("x0_u0"), side_effects => "rw" __CLASSX)
+#pragma core_register(__X0_u1 __NAME("x0_u1"), side_effects => "rw" __CLASSX)
+#pragma core_register(__X0_nu __NAME("x0_nu"), side_effects => "rw" __CLASSX)
+#pragma core_register(__X1_u0 __NAME("x1_u0"), side_effects => "rw" __CLASSX)
+#pragma core_register(__X1_u1 __NAME("x1_u1"), side_effects => "rw" __CLASSX)
+#pragma core_register(__X1_nu __NAME("x1_nu"), side_effects => "rw" __CLASSX)
+#pragma core_register(__X2_u0 __NAME("x2_u0"), side_effects => "rw" __CLASSX)
+#pragma core_register(__X2_u1 __NAME("x2_u1"), side_effects => "rw" __CLASSX)
+#pragma core_register(__X2_nu __NAME("x2_nu"), side_effects => "rw" __CLASSX)
+#pragma core_register(__X3_u0 __NAME("x3_u0"), side_effects => "rw" __CLASSX)
+#pragma core_register(__X3_u1 __NAME("x3_u1"), side_effects => "rw" __CLASSX)
+#pragma core_register(__X3_nu __NAME("x3_nu"), side_effects => "rw" __CLASSX)
+
+#pragma core_register(__Y0_u0 __NAME("y0_u0"), side_effects => "rw" __CLASSX)
+#pragma core_register(__Y0_u1 __NAME("y0_u1"), side_effects => "rw" __CLASSX)
+#pragma core_register(__Y0_nu __NAME("y0_nu"), side_effects => "rw" __CLASSX)
+#pragma core_register(__Y1_u0 __NAME("y1_u0"), side_effects => "rw" __CLASSX)
+#pragma core_register(__Y1_u1 __NAME("y1_u1"), side_effects => "rw" __CLASSX)
+#pragma core_register(__Y1_nu __NAME("y1_nu"), side_effects => "rw" __CLASSX)
+#pragma core_register(__Y2_u0 __NAME("y2_u0"), side_effects => "rw" __CLASSX)
+#pragma core_register(__Y2_u1 __NAME("y2_u1"), side_effects => "rw" __CLASSX)
+#pragma core_register(__Y2_nu __NAME("y2_nu"), side_effects => "rw" __CLASSX)
+#pragma core_register(__Y3_u0 __NAME("y3_u0"), side_effects => "rw" __CLASSX)
+#pragma core_register(__Y3_u1 __NAME("y3_u1"), side_effects => "rw" __CLASSX)
+#pragma core_register(__Y3_nu __NAME("y3_nu"), side_effects => "rw" __CLASSX)
+#line 128 "<built-in>"
+#line 1 "library/cv/himax/linker_script/linker_template_mw_tflitemicro_tx_wo_audio.ld"
+
+#line 1 "./board/socket/configs/24\\target_mem_config.h"
+#line 33 "./board/socket/configs/24\\target_mem_config.h"
+#line 1 "./inc/arc\\arc_feature_config.h"
+#line 46 "./inc/arc\\arc_feature_config.h"
+#line 1 "./board/socket/configs/24\\core_config.h"
+#line 47 "./inc/arc\\arc_feature_config.h"
+#line 34 "./board/socket/configs/24\\target_mem_config.h"
+#line 3 "library/cv/himax/linker_script/linker_template_mw_tflitemicro_tx_wo_audio.ld"
+
+MEMORY {
+
+ ICCM0 : ORIGIN = 0x00000000, LENGTH = 0x10000
+
+
+ ICCM1 : ORIGIN = 0x10000000, LENGTH = 0x50000
+
+
+ DCCM : ORIGIN = 0x80000000, LENGTH = 0x40000
+
+
+  #SYSTEM0 : ORIGIN = 0x20020800, LENGTH = 0xAFDE0
+   SYSTEM0 : ORIGIN = 0x20020800, LENGTH = (0x2011D670-0x20020800)
+
+  XCCM : ORIGIN = 0x90000000, LENGTH = 32768
+  YCCM : ORIGIN = 0xA0000000, LENGTH = 32768
+
+
+
+}
+
+ENTRY(_arc_start)
+
+SECTIONS {
+
+ GROUP : {
+  .init_bootstrap:{
+   *(.init_vector)
+   *(.init_bootstrap)
+  }
+  .vector ALIGN(1024): {
+   _f_vector = .;
+   *(.vector .vector.*)
+   _e_vector = .;
+  }
+ } > ICCM1
+#line 63 "library/cv/himax/linker_script/linker_template_mw_tflitemicro_tx_wo_audio.ld"
+ GROUP : {
+
+  .text ALIGN(4): {
+   _f_text = .;
+   *(TYPE text)
+   _e_text = .;
+  }
+ } > ICCM1
+
+ GROUP BLOCK(4): {
+  _f_bss_tensor_arena = .;
+  .tensor_arena? ALIGN(16): {}
+  _e_bss_tensor_arena = .;
+ } > SYSTEM0
+
+ GROUP : {
+  .rodata ALIGN(4): {
+   _f_rodata = .;
+   _fctors = .;
+   *(.ctors*)
+   _ectors = .;
+   _fdtors = .;
+   *(.dtors*)
+   _edtors = .;
+   _feh_frame = .;
+   *(.eh_frame*)
+   _eeh_frame = .;
+   *(TYPE lit)
+   _e_rodata = .;
+  }
+ } > SYSTEM0
+
+ GROUP BLOCK(4): {
+  .Xdata? : {}
+ } > XCCM
+ GROUP BLOCK(4): {
+  .Ydata? : {}
+ } > YCCM
+ GROUP BLOCK(4): {
+  .rodata_in_data?:{}
+ } > DCCM
+
+
+
+ GROUP : {
+  .sdata ALIGN(8): {
+   _f_sdata = .;
+   tx_thread_context_restore.o
+   tx_thread_context_save.o
+   tx_thread_schedule.o
+   tx_thread_system_return.o
+   tx_timer_interrupt.o
+   *(.sdata*)
+   _e_sdata = .;
+  }
+ } > DCCM
+
+ GROUP : {
+   .data ALIGN(8): {
+   _f_data = .;
+   *(TYPE data)
+  }
+  .tls ALIGN(8): {
+   *(.tls*)
+   _e_data = .;
+  }
+ } > DCCM
+
+ GROUP (NOLOAD) : {
+  .bss ALIGN(8): {
+   _f_bss = .;
+   *(TYPE bss)
+   _e_bss = .;
+  }
+ } > DCCM
+
+ GROUP : {
+  .heap? ALIGN(8) SIZE(80000): {}
+ } > SYSTEM0
+
+ GROUP : {
+  .sbss?: {}
+  .protobuf?: {}
+  .Zdata?: {}
+  .stack ALIGN(8) SIZE(8192): {}
+ } > DCCM
+
+
+ _f_stack = ADDR(.stack);
+ _e_stack = ADDR(.stack) + SIZEOF(.stack);
+ _f_heap = ADDR(.heap);
+ _e_heap = ADDR(.heap) + SIZEOF(.heap);
+
+ _load_addr_text = LOADADDR(.text);
+ _load_addr_rodata = LOADADDR(.rodata);
+ _load_addr_data = LOADADDR(.data);
+}
