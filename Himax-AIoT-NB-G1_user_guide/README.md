@@ -61,17 +61,22 @@ HIMAX WE1 AIOT Platform includes Himax WE-I Plus MCU, image sensor and rich peri
   - NB-IoT board SW1 pin switch to ON
   - Debug board SW1 pin 1 switch to ¡§OFF¡¨, pin 2 keep ¡§ON¡¨
     - NB-IoT board
+    
     ![alt text](images/Himax_NB-IoT_board_sw.png)
+    
     - Debug board
+    
     ![alt text](images/Himax_Debug_board_sw.png)
+    
     - Use GUI_Tool to download EVB image
-    ![alt text](images/Himax_Gui_tool_dowload.png)
       - Step 1: Open HMX_FT4222H_GUI.exe and change to Flash download page
       - Step 2: Read ID to check HW ready (ID info Show in blue box)
       - Step 3: Select correct image file
       - Step 4: Erase flash (optional)
       - Step 5: Programming data
-    
+      
+    ![alt text](images/Himax_Gui_tool_dowload.png) 
+       
 ### Check UART message output    
   - Serial terminal emulation application Setting 
 
@@ -95,7 +100,9 @@ HIMAX WE1 AIOT Platform includes Himax WE-I Plus MCU, image sensor and rich peri
       - #define ID_SCOPE                        "Key-in your ID_SCOPE"
       - #define DEVICE_SYMMETRIC_KEY            "Key-in DEVICE_SYMMETRIC_KEY"
       more information please reference the file:
+      
       <a href="docs/himax_WEI_Azure_RTOS_Device_getStartedDoc.pdf" target="_blank">Azure user guide PDF</a>
+      
 ## Send Algorithm Metadata
     - Algorithm Metadata structure(sample)
      - humanPresence : 1(detect human) , 0(no human)
