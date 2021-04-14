@@ -99,9 +99,9 @@ HIMAX WE1 AIOT Platform includes Himax WE-I Plus MCU, image sensor and rich peri
       - #define REGISTRATION_ID                 "Key-in your REGISTRATION_ID" 
       - #define ID_SCOPE                        "Key-in your ID_SCOPE"
       - #define DEVICE_SYMMETRIC_KEY            "Key-in DEVICE_SYMMETRIC_KEY"
-      more information please reference the file
+      more information please reference the file:
       
-      <a href="docs/himax_WEI_Azure_RTOS_Device_getStartedDoc.pdf" target="_blank">Azure user guide PDF</a>
+<a href="docs/himax_WEI_Azure_RTOS_Device_getStartedDoc.pdf" target="_blank">Azure user guide PDF</a>
       
 ## Send Algorithm Metadata
     - Algorithm Metadata structure(sample)
